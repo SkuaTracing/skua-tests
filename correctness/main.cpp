@@ -72,6 +72,8 @@ int no_parent_span(std::shared_ptr<opentracing::v1::Tracer> tracer) {
     #ifndef NO_JAEGER
     parent_span->Finish();
     #endif
+
+    return 0;
 }
 
 int main() {
